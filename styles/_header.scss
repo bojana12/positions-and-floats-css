@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #e2e2e2;
+
+  .logo {
+    margin: 10px 20px;
+
+    svg {
+      width: 189px;
+      height: 26px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .fa-bars {
+      position: absolute;
+      top: 2%;
+    }
+
+    .fa-user {
+      float: right;
+      padding-top: 5px;
+    }
+  } // end of logo
+} // end of header

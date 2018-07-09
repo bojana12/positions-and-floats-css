@@ -1,0 +1,94 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif; }
+
+header {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #e2e2e2; }
+  header .logo {
+    margin: 10px 20px; }
+    header .logo svg {
+      width: 189px;
+      height: 26px;
+      display: block;
+      margin: 0 auto; }
+    header .logo .fa-bars {
+      position: absolute;
+      top: 2%; }
+    header .logo .fa-user {
+      float: right;
+      padding-top: 5px; }
+
+.about-article {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px; }
+  .about-article .subscribe-login {
+    width: 100%;
+    float: right;
+    margin-right: 20px; }
+    .about-article .subscribe-login a {
+      font-size: 10px;
+      float: right; }
+      .about-article .subscribe-login a:first-child {
+        padding-left: 10px; }
+      .about-article .subscribe-login a:last-child {
+        padding-right: 10px;
+        border-right: 1px solid #e2e2e2; }
+
+.link-decoration {
+  text-decoration: none;
+  color: #326891; }
+
+.image-with-description h1 {
+  display: inline-block;
+  margin: 40px 0 20px 20px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.2; }
+  .image-with-description h1 span {
+    font-size: 30px; }
+
+.image-with-description .description {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5px;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #666; }
+
+.image-with-description .author {
+  font-size: 10px;
+  font-weight: 300; }
+
+.text-by-author {
+  width: 90%;
+  height: 100%;
+  margin: 40px auto 0 auto; }
+  .text-by-author a {
+    font-size: 12px;
+    font-weight: 700;
+    color: black; }
+  .text-by-author .date {
+    font-size: 12px;
+    font-weight: 300;
+    display: inline-block; }
+  .text-by-author .icons {
+    float: right;
+    color: #666;
+    font-size: 20px; }
+    .text-by-author .icons .fa-bookmark {
+      margin: 0 10px; }
+  .text-by-author .text {
+    margin-top: 30px;
+    line-height: 1.47;
+    font-size: 16px;
+    color: #424949; }

@@ -48,11 +48,30 @@ header {
   text-decoration: none;
   color: #326891; }
 
+.blue {
+  color: #326891; }
+
+.black {
+  color: black; }
+
+.fs-12 {
+  font-size: 12px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.pr-5 {
+  padding-right: 5px !important; }
+
+.pl-5 {
+  padding-left: 5px !important; }
+
 .image-with-description h1 {
   display: inline-block;
   margin: 40px 0 20px 20px;
   font-style: italic;
   font-size: 24px;
+  font-weight: 700;
   line-height: 1.2; }
   .image-with-description h1 span {
     font-size: 30px; }
@@ -67,28 +86,59 @@ header {
 
 .image-with-description .author {
   font-size: 10px;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #999; }
 
-.text-by-author {
+.story-by-author {
   width: 90%;
   height: 100%;
   margin: 40px auto 0 auto; }
-  .text-by-author a {
+  .story-by-author .author {
     font-size: 12px;
     font-weight: 700;
     color: black; }
-  .text-by-author .date {
+  .story-by-author .date {
     font-size: 12px;
     font-weight: 300;
     display: inline-block; }
-  .text-by-author .icons {
+  .story-by-author .icons {
     float: right;
     color: #666;
     font-size: 20px; }
-    .text-by-author .icons .fa-bookmark {
+    .story-by-author .icons .fa-bookmark {
       margin: 0 10px; }
-  .text-by-author .text {
+  .story-by-author .story {
     margin-top: 30px;
     line-height: 1.47;
     font-size: 16px;
     color: #424949; }
+    .story-by-author .story button {
+      display: block;
+      width: 250px;
+      height: 40px;
+      margin: 20px auto;
+      font-size: 15px;
+      font-weight: bold;
+      color: #326891;
+      background: #edf2f5;
+      border: 1px solid #93abbc;
+      border-radius: 3px; }
+    .story-by-author .story h4 {
+      font-weight: 900;
+      margin: 30px 0 15px 0; }
+    .story-by-author .story h1 {
+      font-weight: 900;
+      margin: 30px 0 5px 0;
+      font-size: 18px; }
+      .story-by-author .story h1 span {
+        font-size: 20px; }
+    .story-by-author .story .row img {
+      width: 150px;
+      height: 118px; }
+    .story-by-author .story .authors {
+      font-size: 13px;
+      margin: 50px 0; }
+      .story-by-author .story .authors .name {
+        display: inline-block;
+        border-top: 1px solid black;
+        padding-top: 15px; }

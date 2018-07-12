@@ -17,7 +17,6 @@
 
   .icons {
     float: right;
-    color: #666;
     font-size: 20px;
 
     .fa-bookmark {
@@ -26,7 +25,6 @@
   }
 
   .story {
-    margin-top: 30px;
     line-height: 1.47;
     font-size: 16px;
     color: #424949;
@@ -75,6 +73,37 @@
         border-top: 1px solid black;
         padding-top: 15px;
       }
+    }
+
+    .youtube-video {
+      position: absolute;
+      width: 100%;
+      margin-left: -19px;
+    }
+
+    .video-description {
+      width: 90%;
+      margin: 0 auto;
+
+      .video-by {
+        display: inline-block;
+        font-size: 10px;
+        color: #999;
+      }
+    }// end of video-description
+
+    .video-by {
+      display: block;
+      font-size: 10px;
+      color: #999;
+    }
+
+    .about-video {
+      margin-top: 320px;
+    }
+
+    .telescope-image {
+      margin: 30px 0 10px -19px;
     }
   } // end of story
 } // end of story-by-author

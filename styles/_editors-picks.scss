@@ -1,0 +1,77 @@
+.editors-picks {
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #e2e2e2;
+
+  .white-rectangle {
+    padding-top: 30px;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0 -5px 20px 0 #e2e2e2;
+  }
+
+  .grey-rectangle {
+    padding-top: 20px;
+    background-color: #f7f7f7;
+  }
+
+  .editors-pick {
+    border-top: 1px solid black;
+
+    img {
+      width: 100%;
+      height: 250px;
+    }
+
+    h4 {
+      padding: 17px 20px 15px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .author {
+      float: right;
+      margin: 3px 15px 0px;
+      color: rgb(153, 153, 153);
+      font-size: 9px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 20px 20px 0 20px;
+    }
+
+    .date {
+      color: rgb(153, 153, 153);
+      margin-left: 20px;
+    }
+  } // end of editors-pick
+
+  .articles {
+    width: 90%;
+    margin: 20px auto;
+    border-top: 1px solid #e2e2e2;
+
+    h4 {
+      width: 75%;
+      display: inline-block;
+      margin: 0;
+      padding: 15px 0 10px 0;
+      color: black;
+      font-size: 16px;
+    }
+
+    img {
+      width: 60px;
+      height: 70px;
+      position: relative;
+      display: inline-block;
+      float: right;
+      padding-top: 15px;
+    }
+
+    .date {
+      display: block;
+      color: rgb(153, 153, 153);
+    }
+  } // end of articles
+} // end of editors-picks

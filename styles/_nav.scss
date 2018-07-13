@@ -1,0 +1,58 @@
+.nav {
+  width: 90%;
+  margin: 10px auto;
+
+  .header {
+    svg {
+      width: 189px;
+      height: 26px;
+    }
+
+    a {
+      float: right;
+    }
+  }
+
+  .links {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: -10px;
+
+      li {
+        padding: 15px 0;
+        font-weight: 600;
+        border-top: 1px solid #ebebeb;
+      }
+    } // end of ul
+  } // end of links
+
+  .contact-us {
+    position: absolute;
+    width: 100%;
+    margin: 10px 0 0 -19px;
+    padding: 5px 0 40px 0;
+    border-top: 1px solid #ebebeb;
+
+    .year {
+      display: block;
+      text-align: center;
+      margin: 5px 0 10px 0;
+      color: rgb(153, 153, 153);
+    }
+
+    ul {
+      width: 90%;
+      margin: 0 auto;
+      list-style-type: none;
+      padding: 0;
+      font-size: 11px;
+
+      li {
+        display: inline-block;
+        padding: 5px 8px 0 0;
+        color: rgb(153, 153, 153);
+      }
+    }
+  }
+} // end of nav-bar

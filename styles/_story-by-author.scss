@@ -44,19 +44,19 @@
         border-radius: 3px;
       }
 
-      h4 {
-        font-weight: 900;
-        margin: 30px 0 15px 0;
-      }
-
       h1 {
-      font-weight: 900;
-      margin: 30px 0 5px 0;
-      font-size: 18px;
-
+        font-weight: 900;
+        margin: 30px 0 5px 0;
+        font-size: 18px;
+        
         span {
           font-size: 20px;
         }
+      }
+
+      h4 {
+        font-weight: 900;
+        margin: 30px 0 15px 0;
       }
 
       .row {
@@ -207,8 +207,6 @@
       &:target input,
       &:target img,
       &:target span,
-      &:target span.picture-by,
-      &:target span.terms,
       &:target .sign-up-button,
       &:target .less,
                  {
@@ -220,4 +218,15 @@
       }
     } // end of fulltext
   } // end of story
+
+  .white-rectangle {
+    padding-top: 30px;
+
+  }
+
+  .rectangle {
+    border-top: 1px solid #e2e2e2;
+    padding-top: 20px;
+    background-color: #f7f7f7;
+  }
 } // end of story-by-author

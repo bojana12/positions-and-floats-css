@@ -1,33 +1,45 @@
 .story-by-author {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  margin: 40px auto 0 auto;
+  margin-top: 40px;
 
-  .author {
-    font-size: 12px;
-    font-weight: 700;
-    color: black;
-  }
-
-  .date {
-    font-size: 12px;
-    font-weight: 300;
-    display: inline-block;
-  }
-
-  .icons {
-    float: right;
-    font-size: 20px;
-
-    .fa-bookmark {
-      margin: 0 10px;
-    }
-  }
 
   .story {
+    width: 90%;
+    margin: 0 auto;
     line-height: 1.47;
     font-size: 16px;
     color: #424949;
+
+    @media screen and (min-width:768px) {
+      width: 80%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 60%;
+    }
+
+    .author {
+      font-size: 12px;
+      font-weight: 700;
+      color: black;
+    }
+  
+    .date {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  
+    .icons {
+      float: right;
+      font-size: 20px;
+  
+      .fa-bookmark {
+        margin: 0 10px;
+      }
+    } // end of icons
 
     .fulltext {
       .more,
@@ -64,7 +76,15 @@
           width: 150px;
           height: 118px;
         }
-      }
+
+        .third-pic {
+          display: none;
+
+          @media screen and (min-width:768px) {
+            display: block;
+          }
+        } // end of third-pic
+      } // end of row
 
       .authors {
         font-size: 13px;
@@ -75,24 +95,25 @@
           border-top: 1px solid black;
           padding-top: 15px;
         }
-      }
+      } // end of authors
 
       .youtube-video {
-        position: absolute;
-        width: 100%;
-        margin-left: -19px;
-      }
+        iframe {
+          @media screen and (min-width: 768px) {
+            height: 319px;
+          }
+        }
+      } // end of youtube-video
 
       .video-description {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
 
         .video-by {
           display: inline-block;
           font-size: 10px;
           color: #999;
         }
-      }// end of video-description
+      } // end of video-description
 
       .picture-by {
         display: block;
@@ -101,11 +122,11 @@
       }
 
       .about-video {
-        margin-top: 320px;
+        margin-top: 30px;
       }
 
       .telescope-image {
-        margin: 30px 0 10px -19px;
+        width: 100%;
       } 
 
       .time-of-release {
@@ -124,14 +145,19 @@
       }
 
       .line {
-        position: absolute;
         width: 100%;
-        margin-left: -19px;
         border: 0.5px solid rgb(0, 0, 0);
       }
 
-      .sign-up {
-        margin: 50px 0 0 0;
+      .sign-up-section {
+        @media screen and (min-width: 768px){
+          width: 100%;
+        }
+
+        img {
+          width: 70%;
+          height: 20%;
+        }
       }
 
       input[type=email] {
@@ -153,12 +179,8 @@
       .terms {
         font-size: 11.5px;
         display: inline-block;
-        position: absolute;
+        position: relative;
         padding-left: 20px;
-      }
-
-      .not-robot {
-        margin-top: 50px;
       }
 
       .sign-up-button {
@@ -221,7 +243,6 @@
 
   .white-rectangle {
     padding-top: 30px;
-
   }
 
   .rectangle {

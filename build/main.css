@@ -10,9 +10,16 @@ body {
   font-family: Roboto, Arial, sans-serif; }
 
 header {
+  position: relative;
   width: 100%;
-  height: 100%;
-  border-bottom: 1px solid #e2e2e2; }
+  top: 0px;
+  left: 0px;
+  z-index: 200;
+  background-color: white; }
+  @media screen and (min-width: 768px) {
+    header {
+      position: fixed;
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 4px; } }
   header .logo {
     margin: 10px 20px; }
     header .logo svg {
@@ -20,29 +27,34 @@ header {
       height: 26px;
       display: block;
       margin: 0 auto; }
+      @media screen and (min-width: 768px) {
+        header .logo svg {
+          width: 225px;
+          height: 30px; } }
     header .logo .fa-bars {
       position: absolute;
-      top: 2%; }
+      padding-top: 5px; }
     header .logo .fa-user {
       float: right;
       padding-top: 5px; }
+  header .subscribe-login {
+    width: 100%;
+    float: right;
+    padding: 5px 20px;
+    border-top: 1px solid #ebebeb; }
+    header .subscribe-login a {
+      font-size: 10px;
+      float: right; }
+      header .subscribe-login a:first-child {
+        padding-left: 10px; }
+      header .subscribe-login a:last-child {
+        padding-right: 10px;
+        border-right: 1px solid #e2e2e2; }
 
 .about-article {
   width: 100%;
   height: 100%;
   margin-top: 15px; }
-  .about-article .subscribe-login {
-    width: 100%;
-    float: right;
-    margin-right: 20px; }
-    .about-article .subscribe-login a {
-      font-size: 10px;
-      float: right; }
-      .about-article .subscribe-login a:first-child {
-        padding-left: 10px; }
-      .about-article .subscribe-login a:last-child {
-        padding-right: 10px;
-        border-right: 1px solid #e2e2e2; }
 
 .link-decoration {
   text-decoration: none;
@@ -69,8 +81,14 @@ header {
 .mt-10 {
   margin-top: 10px; }
 
+.mt-20 {
+  margin-top: 20px; }
+
 .mt-30 {
   margin-top: 30px; }
+
+.ml-20 {
+  margin-left: 20px; }
 
 .mb-0 {
   margin-bottom: 0; }
@@ -84,13 +102,25 @@ header {
 .pl-5 {
   padding-left: 5px !important; }
 
+@media screen and (min-width: 1024px) {
+  .image-with-description img {
+    width: 90%;
+    display: block;
+    margin: auto; } }
+
 .image-with-description h1 {
   display: inline-block;
-  margin: 40px 0 20px 20px;
+  margin: 40px auto 4% 4%;
   font-style: italic;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2; }
+  @media screen and (min-width: 768px) {
+    .image-with-description h1 {
+      display: block;
+      width: 80%;
+      margin: 150px auto 2% 10%;
+      font-size: 30px; } }
   .image-with-description h1 span {
     font-size: 30px; }
 
@@ -107,26 +137,35 @@ header {
   color: #999; }
 
 .story-by-author {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  margin: 40px auto 0 auto; }
-  .story-by-author .author {
-    font-size: 12px;
-    font-weight: 700;
-    color: black; }
-  .story-by-author .date {
-    font-size: 12px;
-    font-weight: 300;
-    display: inline-block; }
-  .story-by-author .icons {
-    float: right;
-    font-size: 20px; }
-    .story-by-author .icons .fa-bookmark {
-      margin: 0 10px; }
+  margin-top: 40px; }
   .story-by-author .story {
+    width: 90%;
+    margin: 0 auto;
     line-height: 1.47;
     font-size: 16px;
     color: #424949; }
+    @media screen and (min-width: 768px) {
+      .story-by-author .story {
+        width: 80%; } }
+    @media screen and (min-width: 1024px) {
+      .story-by-author .story {
+        width: 60%; } }
+    .story-by-author .story .author {
+      font-size: 12px;
+      font-weight: 700;
+      color: black; }
+    .story-by-author .story .date {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: 300; }
+    .story-by-author .story .icons {
+      float: right;
+      font-size: 20px; }
+      .story-by-author .story .icons .fa-bookmark {
+        margin: 0 10px; }
     .story-by-author .story .fulltext .more,
     .story-by-author .story .fulltext .less {
       display: block;
@@ -151,6 +190,11 @@ header {
     .story-by-author .story .fulltext .row img {
       width: 150px;
       height: 118px; }
+    .story-by-author .story .fulltext .row .third-pic {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .story-by-author .story .fulltext .row .third-pic {
+          display: block; } }
     .story-by-author .story .fulltext .authors {
       font-size: 13px;
       margin: 50px 0; }
@@ -158,13 +202,11 @@ header {
         display: inline-block;
         border-top: 1px solid black;
         padding-top: 15px; }
-    .story-by-author .story .fulltext .youtube-video {
-      position: absolute;
-      width: 100%;
-      margin-left: -19px; }
+    @media screen and (min-width: 768px) {
+      .story-by-author .story .fulltext .youtube-video iframe {
+        height: 319px; } }
     .story-by-author .story .fulltext .video-description {
-      width: 90%;
-      margin: 0 auto; }
+      width: 100%; }
       .story-by-author .story .fulltext .video-description .video-by {
         display: inline-block;
         font-size: 10px;
@@ -174,9 +216,9 @@ header {
       font-size: 10px;
       color: #999; }
     .story-by-author .story .fulltext .about-video {
-      margin-top: 320px; }
+      margin-top: 30px; }
     .story-by-author .story .fulltext .telescope-image {
-      margin: 30px 0 10px -19px; }
+      width: 100%; }
     .story-by-author .story .fulltext .time-of-release {
       font-size: 10px;
       color: #999; }
@@ -187,12 +229,14 @@ header {
       .story-by-author .story .fulltext .social-networks .fa-share {
         margin: 0 15px; }
     .story-by-author .story .fulltext .line {
-      position: absolute;
       width: 100%;
-      margin-left: -19px;
       border: 0.5px solid black; }
-    .story-by-author .story .fulltext .sign-up {
-      margin: 50px 0 0 0; }
+    @media screen and (min-width: 768px) {
+      .story-by-author .story .fulltext .sign-up-section {
+        width: 100%; } }
+    .story-by-author .story .fulltext .sign-up-section img {
+      width: 70%;
+      height: 20%; }
     .story-by-author .story .fulltext input[type=email] {
       width: 100%;
       height: 40px;
@@ -208,10 +252,8 @@ header {
     .story-by-author .story .fulltext .terms {
       font-size: 11.5px;
       display: inline-block;
-      position: absolute;
+      position: relative;
       padding-left: 20px; }
-    .story-by-author .story .fulltext .not-robot {
-      margin-top: 50px; }
     .story-by-author .story .fulltext .sign-up-button {
       width: 100%;
       height: auto;
@@ -263,8 +305,9 @@ header {
 
 .editors-picks {
   width: 100%;
-  height: 100%;
-  border-bottom: 5px solid #e2e2e2; }
+  height: 100%; }
+  .editors-picks .row {
+    margin: 0; }
   .editors-picks .white-rectangle {
     padding-top: 30px;
     border-bottom: 1px solid #e2e2e2;
@@ -290,11 +333,10 @@ header {
       font-size: 18px;
       margin: 20px 20px 0 20px; }
     .editors-picks .editors-pick .date {
-      color: #999999;
-      margin-left: 20px; }
+      color: #999999; }
   .editors-picks .articles {
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
+    padding: 20px;
     border-top: 1px solid #e2e2e2; }
     .editors-picks .articles h4 {
       width: 75%;
@@ -307,7 +349,6 @@ header {
       width: 60px;
       height: 70px;
       position: relative;
-      display: inline-block;
       float: right;
       padding-top: 15px; }
     .editors-picks .articles .date {
@@ -317,11 +358,26 @@ header {
 .nav {
   width: 90%;
   margin: 10px auto; }
-  .nav .header svg {
-    width: 189px;
-    height: 26px; }
-  .nav .header a {
-    float: right; }
+  @media screen and (min-width: 1024px) {
+    .nav {
+      width: 100%; } }
+  .nav .header {
+    border-top: 2px solid #e2e2e2;
+    padding-top: 10px; }
+    @media screen and (min-width: 1024px) {
+      .nav .header {
+        padding-left: 3%; } }
+    .nav .header svg {
+      width: 189px;
+      height: 26px; }
+    .nav .header a {
+      float: right; }
+      @media screen and (min-width: 1024px) {
+        .nav .header a {
+          padding-right: 3%; } }
+  @media screen and (min-width: 1024px) {
+    .nav .links {
+      padding: 0 3% 0 3%; } }
   .nav .links ul {
     list-style-type: none;
     padding: 0;
@@ -330,24 +386,31 @@ header {
       padding: 15px 0;
       font-weight: 600;
       border-top: 1px solid #ebebeb; }
-  .nav .contact-us {
-    position: absolute;
-    width: 100%;
-    margin: 10px 0 0 -19px;
-    padding: 5px 0 40px 0;
-    border-top: 1px solid #ebebeb; }
-    .nav .contact-us .year {
-      display: block;
-      text-align: center;
-      margin: 5px 0 10px 0;
+      .nav .links ul li:last-child {
+        border-bottom: 1px solid #ebebeb; }
+
+.contact-us {
+  width: 100%;
+  margin: 20px 0 30px 0px;
+  text-align: center; }
+  .contact-us .year {
+    display: block;
+    text-align: center;
+    margin: 5px 0 10px 0;
+    color: #999999; }
+    @media screen and (min-width: 1024px) {
+      .contact-us .year {
+        display: inline; } }
+  .contact-us ul {
+    width: 90%;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    font-size: 11px; }
+    @media screen and (min-width: 1024px) {
+      .contact-us ul {
+        display: inline; } }
+    .contact-us ul li {
+      display: inline-block;
+      padding: 5px 8px 0 0;
       color: #999999; }
-    .nav .contact-us ul {
-      width: 90%;
-      margin: 0 auto;
-      list-style-type: none;
-      padding: 0;
-      font-size: 11px; }
-      .nav .contact-us ul li {
-        display: inline-block;
-        padding: 5px 8px 0 0;
-        color: #999999; }

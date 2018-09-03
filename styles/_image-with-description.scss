@@ -1,6 +1,11 @@
 @import 'variables.scss';
 
 .image-with-description {
+  margin: 0 auto;
+  
+  @media screen and (min-width: 1440px) {
+    width: 80%;
+  }
 
   img {
     @media screen and (min-width: 1024px) {

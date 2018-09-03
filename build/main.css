@@ -102,39 +102,41 @@ header {
 .pl-5 {
   padding-left: 5px !important; }
 
-@media screen and (min-width: 1024px) {
-  .image-with-description img {
-    width: 90%;
-    display: block;
-    margin: auto; } }
-
-.image-with-description h1 {
-  display: inline-block;
-  margin: 40px auto 4% 4%;
-  font-style: italic;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2; }
-  @media screen and (min-width: 768px) {
-    .image-with-description h1 {
+.image-with-description {
+  margin: 0 auto; }
+  @media screen and (min-width: 1440px) {
+    .image-with-description {
+      width: 80%; } }
+  @media screen and (min-width: 1024px) {
+    .image-with-description img {
+      width: 90%;
       display: block;
-      width: 80%;
-      margin: 150px auto 2% 10%;
-      font-size: 30px; } }
-  .image-with-description h1 span {
-    font-size: 30px; }
-
-.image-with-description .description {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 5px;
-  line-height: 1.5;
-  font-size: 12px; }
-
-.image-with-description .author {
-  font-size: 10px;
-  font-weight: 300;
-  color: #999; }
+      margin: auto; } }
+  .image-with-description h1 {
+    display: inline-block;
+    margin: 40px auto 4% 4%;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2; }
+    @media screen and (min-width: 768px) {
+      .image-with-description h1 {
+        display: block;
+        width: 80%;
+        margin: 150px auto 2% 10%;
+        font-size: 30px; } }
+    .image-with-description h1 span {
+      font-size: 30px; }
+  .image-with-description .description {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+    line-height: 1.5;
+    font-size: 12px; }
+  .image-with-description .author {
+    font-size: 10px;
+    font-weight: 300;
+    color: #999; }
 
 .story-by-author {
   width: 100%;
@@ -152,6 +154,9 @@ header {
     @media screen and (min-width: 1024px) {
       .story-by-author .story {
         width: 60%; } }
+    @media screen and (min-width: 1440px) {
+      .story-by-author .story {
+        width: 40%; } }
     .story-by-author .story .author {
       font-size: 12px;
       font-weight: 700;
@@ -305,7 +310,8 @@ header {
 
 .editors-picks {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin: 0 auto; }
   .editors-picks .row {
     margin: 0; }
   .editors-picks .white-rectangle {
